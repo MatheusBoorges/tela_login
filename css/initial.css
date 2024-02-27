@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+ }
+
+section{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(180deg, #AA99F1 0%, #081267 100%);
+    background-repeat: no-repeat;
+}
+
+.box{
+    position: relative;
+    width: 60%;
+    height: 70%;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.box-input {
+    display: flex;
+    justify-content: center;
+    margin: 2px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #010955;        
+}
+
+.login{
+    background: rgba(1, 9, 85, 0.41);
+    text-align: center;
+}
+
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#form-cadastro{
+    align-items: flex-start;
+}
+
+
+#input-user{
+    width: 100%;
+    padding: 10px;
+    cursor: text;
+    border: none;
+    border-radius: 5px;
+    background-color: #010955;
+    color: white;
+}
+
+#data_nasc{
+
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: lighter;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 5px;
+}
+    
+#submit{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background: #0017E7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+#submit, #submit-cad:hover{
+    background-color: #283cf3;
+    box-shadow: 0px 4px 4px 0px rgba(37, 36, 36, 0.483);
+}
+
+#submit-cad{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    background: #0017E7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.box-sub-cad{
+    width: 80%;
+    padding: 10px;
+}
+
+.cadastro {
+    flex-direction: column;
+    align-items: center;
+}
+
+.cad-novo{
+    width: 80%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cadastro p{
+    font-size: 20px;
+    width: 70%;
+}
+
+.login-animation{
+    transform: translate(101%,0);
+    transition: 800ms ease;
+}
+
+.cadastro-animation{
+    transform: translate(-101%,0);
+    transition: 800ms ease;
+}
+
+.transisao-cad{
+    transition: 800ms ease;
+}
+
+h1{
+    color: white;
+    font-weight: lighter;
+    font-size: 50px;
+}
+
+.data{
+    font-size: 15px;
+}
+.form-cad_anima-iden{
+    animation: desaparecer_left 800ms ease both;
+}
+
+.form-cad-nov-iden{
+    animation: desaparecer_right 800ms  ease both;
+}
+
+@keyframes desaparecer_left{
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 75%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 0%;
+        transform: translate(-100px,0);
+        display: none;   
+    }
+}
+
+@keyframes desaparecer_right{
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 75%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 0%;
+        transform: translate(50px,0);
+        display: none;   
+    }
+}
+
+.visualizar-login{
+    display: none;
+}
+
+.visualizar-formu{
+    display: none;
+}
+
+.animation_login{
+    animation: aparecer 1000ms both;
+}
+
+.animation_cadastro{
+    animation: aparecer 1000ms both;
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 25%;
+    }
+    25%{
+        opacity: 50%;
+    }
+    50%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;  
+    }
+}

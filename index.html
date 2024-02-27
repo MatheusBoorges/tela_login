@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/initial.css">
+</head>
+<body>
+    <section>
+        <div class="box">
+            <div class="box-input login">  
+                <form action="php/validacao.php" method="POST" class="form" id="form-login">
+                    <br>
+                    <h1>Login</h1>
+                    <br><br><br>
+                    <input type="text" placeholder="Email" id="input-user" class="input-email" name="email" required>                          
+                    <br>
+                    <input type="password" placeholder="Senha" id="input-user" class="input-senha" name="senha" required>                    
+                    <br><br>
+                    <input type="submit" id="submit" placeholder="Entrar">
+                </form>
+                <form action="php/cadastro.php" method="POST" class="form visualizar-formu animation_cadastro" id="form-cadastro">
+                    <h1>Formulario</h1>
+                    <br>
+                    
+                    <input type="text" class="input-nome" id="input-user" placeholder="Nome" name="nome" required>
+                    <br>
+                    
+                    <input type="text" class="input-email" id="input-user" placeholder="Email" name="email" required>
+                    <br>
+                    
+                    <input type="password" class="input-senha" id="input-user" placeholder="Senha" name="senha" required>                
+                    <br>
+                    
+                    <div class="input-date">
+                        <label for="data_nasc" class="data">Data de nascimento: </label>                    
+                        <input type="date" id="data_nasc"  name="data_nasc">
+                    </div>
+                    <br>
+                    
+                    <input type="text" class="input-celular" placeholder="Telefone" id="input-user" name="celular" required>                    
+                    <br><br>
+                    
+                    <input type="submit" name="submit" id="submit" placeholder="Cadastrar" required>
+                </form>
+            </div>
+            <div class="box-input cadastro">
+                <div class="cad-novo novo-usuario">
+                    <h1>Novo Usuario</h1>
+                    <br>
+                    <div class="box-sub-cad">
+                        <button id="submit-cad" onclick="mudar_formulario()">Cadastro</button>
+                    </div>
+                    <br>
+                    <p>
+                        Bem-vindo ao estoque, cadastre-se para acessar o estoque.
+                    </p>
+                </div>
+                <div class="logar animation_login visualizar-login cad-novo">
+                    <h1>Voltar ao Login</h1>
+                    <br>
+                    <div class="box-sub-cad">
+                        <button id="submit-cad" onclick="voltar_login()">Logar</button>
+                    </div>
+                    <br>
+                    <p>
+                        Bem-vindo ao estoque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/animation.js"></script>       
+</body>
+</html>

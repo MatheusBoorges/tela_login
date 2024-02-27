@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: linear-gradient(180deg, #AA99F1 0%, #081267 100%);
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.box-central{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.table{
+    width: 80%;
+    margin: 10px;
+}
+
+.selecionar{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-listar{
+    display: flex;
+}
+
+
+.input-user{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+fieldset{
+    border: 1px solid white;
+}
+
